@@ -15,10 +15,15 @@ def factorial(n):
 def factorial_iterative(n):
     # once implemented, change factorial (above) to call factorial_iterative
     # to verify that your iterative implementation passes all tests below
-    factorial = 1
-    for i in range(0, n):
-        factorial = factorial*(n-i)
-    return factorial
+    if n < 0 or not isinstance(n, int):
+        raise ValueError('factorial is undefined for n = {}'.format(n))
+    elif n == 0 or n == 1:
+        return 1
+    elif n > 1:
+        factorial = 1
+        for i in range(0, n):
+            factorial = factorial*(n-i)
+        return factorial
 
 def factorial_recursive(n):
     # check if n is negative or not an integer (invalid input)

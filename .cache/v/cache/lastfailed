@@ -1,4 +1,1 @@
-{
-  "test_recursion.py::TestRecursion::test_factorial_with_floating_point_numbers": true, 
-  "test_recursion.py::TestRecursion::test_factorial_with_negative_integers": true
-}
+{}
